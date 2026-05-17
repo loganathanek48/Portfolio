@@ -6,7 +6,7 @@ import path from "path";
 const port = Number(process.env.PORT) || 5173;
 
 export default defineConfig({
-  base: "/portfolio/",
+  base: "/",
 
   plugins: [
     react(),
@@ -17,7 +17,6 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-    dedupe: ["react", "react-dom"],
   },
 
   build: {
@@ -29,10 +28,5 @@ export default defineConfig({
     port,
     strictPort: true,
     host: "0.0.0.0",
-  },
-
-  preview: {
-    port,
-    host: "0.0.0.0",
-  },
+  }
 });
