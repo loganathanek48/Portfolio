@@ -1,1 +1,2 @@
-/portfolio/*    /index.html   200
+/portfolio        /portfolio/index.html   200
+/portfolio/*      /portfolio/index.html   200
